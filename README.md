@@ -28,3 +28,23 @@ Data cleaning was performed by handling refund transactions and invalid records.
 - SQL (GROUP BY, CASE, AGGREGATE FUNCTIONS)
 - Data Cleaning & Filtering
 - Analytical Thinking
+
+  ## 🧾 Sample SQL Queries
+
+```sql
+-- Total Revenue
+SELECT SUM(TOTAL) 
+FROM K1_SALES_DATA
+WHERE TOTAL > 0
+AND STATUS != 'refund';
+
+-- Top 5 Products
+SELECT * FROM (
+    SELECT SKU, SUM(QTY_ORDERED) AS total_sold
+    FROM K1_SALES_DATA
+    WHERE TOTAL > 0
+    AND STATUS != 'refund'
+    GROUP BY SKU
+    ORDER BY total_sold DESC
+)
+WHERE ROWNUM <= 5;
