@@ -1,6 +1,9 @@
 -- ============================================
+-- =========================================
 -- PROJECT: Sales Data Analysis using SQL
 -- TABLE: K1_SALES_DATA
+-- DESCRIPTION: End-to-end sales analysis including data cleaning and insights
+-- =========================================
 -- ============================================
 
 -- ============================================
