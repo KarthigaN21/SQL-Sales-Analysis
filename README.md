@@ -9,7 +9,7 @@
 
 ## 🔍 Project Overview
 This project focuses on analyzing sales data using SQL.  
-Data cleaning was performed by handling refund transactions and invalid records.
+Data cleaning and transformation were performed using SQL before visualization.
 
 ## 📊 Key Analysis Performed
 - Total revenue and order analysis
